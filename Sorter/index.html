@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div id="blurWrapper">
+        <header>
+            <h1>Sorting Visualizer</h1>
+            <p>Insertion Sort • A–Z / Z–A</p>
+        </header>
+
+        <div class="controls">
+            <button id="generate">Generate</button>
+            <button id="sortAsc">Sort A–Z</button>
+            <button id="sortDesc">Sort Z–A</button>
+        </div>
+
+        <div id="bars"></div>
+        <div id="status">*Please start*</div>
+
+        <footer>
+            <p>Website by Divas Pant</p>
+            <p>Thanks to @onjsdev on YouTube for the idea</p>
+        </footer>
+    </div>
+
+    <!-- Generate Modal -->
+    <div id="modal">
+        <div class="modal-box">
+            <h2>Enter Bar Heights</h2>
+
+            <div class="inputs">
+                <input type="number" min="10" max="300">
+                <input type="number" min="10" max="300">
+                <input type="number" min="10" max="300">
+                <input type="number" min="10" max="300">
+                <input type="number" min="10" max="300">
+                <input type="number" min="10" max="300">
+                <input type="number" min="10" max="300">
+            </div>
+
+            <div class="modal-buttons">
+                <button id="random">Random</button>
+                <button id="done">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
