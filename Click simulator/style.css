@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans";
+}
+
+body {
+    background-image: linear-gradient(135deg, #012d2d, #014c4c, #016565);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h3 {
+    margin-top: 0;
+}
+
+.header h1 {
+    margin-bottom: 2px;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.upgrades {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+}
+
+.upgrades button {
+    border-radius: 5px;
+    border: 2px solid rgb(0, 46, 46);
+    background-color: #02aeae;
+}
+
+.upgrades button:hover {
+    background-color: teal;
+}
+
+.upgrade div {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.info {
+    user-select: none;
+}
+
+a {
+    color: white;
+}
+
+.uu {
+    margin-right: 555px;
+}
+
+.credit {
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        gap: 40px;
+        padding: 10px;
+        overflow-y: auto;
+        /* allow scrolling */
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .header h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .info h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .upgrades {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 per row */
+        gap: 12px;
+    }
+
+    .upgrades button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .upgrade div {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .uu {
+        margin-right: 0;
+    }
+
+    .credit {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+.upgrades button {
+    min-height: 80px;
+    cursor: pointer;
+    touch-action: manipulation;
+}
